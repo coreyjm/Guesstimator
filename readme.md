@@ -7,13 +7,12 @@ You'll need a server running PHP 5.3+ and a MySQL db. Pretty much any ol webhost
 
 Change the following in config > config.ini:
 
-`db_dns=mysql:host=yourhost;port=3306;dbname=`
-
-`db_name=yourdbame`
-
-`db_user=yourusername`
-
-`db_pass=yourpassword`
+```
+db_dns=mysql:host=yourhost;port=3306;dbname=
+db_name=yourdbame
+db_user=yourusername
+db_pass=yourpassword
+```
 
 Copy the files from the db folder into your MySQL database.
 
