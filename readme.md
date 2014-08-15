@@ -1,5 +1,15 @@
-[![Fat-Free Framework](ui/images/logo.png)](http://fatfree.sf.net/)
+*Setup*
+You'll need a server running PHP 5.3+ and a MySQL db. Pretty much any ol webhost will do.
+(Yes, nerd, we know you hate php. We made this on php so that anyone can reuse it with minimal agony.)
 
-*A powerful yet easy-to-use PHP micro-framework designed to help you build dynamic and robust Web applications - fast!*
+Change the following in config > config.ini:
+db_dns=mysql:host=yourhost;port=3306;dbname=
+db_name=yourdbame
+db_user=yourusername
+db_pass=yourpassword
 
-For details visit [http://foysalmamun.wordpress.com/](http://foysalmamun.wordpress.com/2013/03/27/fat-free-crud-with-mvc-tutorial/).
+*Made with*
+fatfreeframework: http://fatfree.sf.net/
+opauth: http://opauth.org/
+bootstrap: http://getbootstrap.com/
+AND LOOOOOOVE.
