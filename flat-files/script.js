@@ -5,6 +5,9 @@ $(document).ready(function(){
 
 		$.each($('.question-row'), function(k,v){
 			var q = $(this).attr('data-question');
+			var a = questionsAnswers[q]["answer"];
+
+			console.log(q,a);
 
 		});
 
