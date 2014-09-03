@@ -14,6 +14,10 @@
 	max-width: 700px;
 }
 
+input[type="text"] {
+	width: 100%;
+}
+
 /*----TYPE STUFFS----*/
 .navbar-brand, h1, th{
 	font-family: 'Francois One', sans-serif;
@@ -22,6 +26,7 @@ h4{
 	font-weight:normal;
 	color:#777777;
 }
+.error { color: red; }
 
 /*-----WEIRDNESSES-----*/
 
