@@ -28,6 +28,10 @@
 
 
 /*----LAYOUT STUFFS----*/
+body { 
+  padding: 60px 0 0 0;
+}
+
 .headline{
 	margin-top:70px;
 }
@@ -41,7 +45,7 @@
 
 .container {
 	max-width: 700px;
-	margin: 90 auto 0 auto;
+	margin: 0 auto 0 auto;
 }
 
 input[type="text"] {
