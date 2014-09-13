@@ -41,6 +41,7 @@
 
 .container {
 	max-width: 700px;
+	margin: 90 auto 0 auto;
 }
 
 input[type="text"] {
