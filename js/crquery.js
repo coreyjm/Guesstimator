@@ -19,7 +19,7 @@ var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids="+tabl
 //console.log(crAPI);
 
 $.getJSON(crAPI, function (data) {
-	console.log(data.16000US1714000.B01001.estimate.B01001001);
+	//console.log(data.16000US1714000.B01001.estimate.B01001001);
 	console.log(data); //In case you want to check out all the data in the console.
     
     // Get the numbers we want from the various tables and store them as vars.
