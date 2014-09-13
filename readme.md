@@ -16,6 +16,6 @@ Setup
 
 [Tabletop](https://github.com/jsoma/tabletop)
 
-[bootstrap](http://getbootstrap.com/)
+[Bootstrap](http://getbootstrap.com/)
 
 **AND LOOOOOOVE.** &hearts;&hearts;&hearts;&hearts; 
