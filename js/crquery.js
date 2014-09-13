@@ -12,8 +12,8 @@ var tables =
 	"C03001", //hispanic/latino origin
 	"B09020", //seniors
 	"B11009", //same-sex couples
-	]
-};
+	];
+	
 console.log(tables);
 var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids=B01001,B01002&geo_ids="+city;
 
