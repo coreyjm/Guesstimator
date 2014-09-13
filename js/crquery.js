@@ -18,19 +18,19 @@ var tables =
 var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids="+tables+"&geo_ids="+city;
 console.log(crAPI);
 
-$.getJSON(crAPI, function (data) {
+$.getJSON(crAPI, function (crdata) {
 
-	console.log(data); //Check out all the data in the console.
-	console.log(data.data); //down to data level works
+	console.log(crdata); //Check out all the data in the console.
+	console.log(crdata.data); //down to data level works
 	
 	//This chokes with Uncaught SyntaxError: Unexpected token ILLEGAL and I don't know why?
-	console.log(data.data.16000US1714000); 
+	//console.log(crdata.data.16000US1714000); 
 
 	//Also breaks with an undefined if I just do this, which is actually preferable for this project ...
-	//console.log(data.data[0].B01001); 
+	//console.log(crdata.data[0].B01001); 
 
     //This is what I want to get at:
-    //console.log(data.data[0].B01001.estimate.B01001001);
+    //console.log(crdata.data[0].B01001.estimate.B01001001);
 
 });
 
