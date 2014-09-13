@@ -1,8 +1,24 @@
 
 var city = "16000US1714000";
+var tables = 
+	[
+	"B01003", //total population
+	"B01002", //median age by sex
+	"B09001", //population under 18 years
+	"B19013", //median income
+	"B17001", //poverty
+	"B11001", //household type (married couple families)
+	"B01001", //sex by age
+	"C03001", //hispanic/latino origin
+	"B09020", //seniors
+	"B11009", //same-sex couples
+	]
+
+}
+consoe.log(tables);
 var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids=B01001,B01002&geo_ids="+city;
 
-console.log(crAPI);
+
 
 /* var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 
