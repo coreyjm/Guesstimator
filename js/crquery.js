@@ -21,7 +21,7 @@ var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids="+tabl
 $.getJSON(crAPI, function (data) {
     
     // Get the numbers we want from the various tables and store them as vars.
-    var totalpop = data.response.16000US1714000.B01001.estimate.B01001001;
+    var totalpop = data.16000US1714000.B01001.estimate.B01001001;
 
 
 
