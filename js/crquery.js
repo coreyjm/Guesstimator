@@ -18,12 +18,17 @@ var tables =
 var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids="+tables+"&geo_ids="+city;
 //console.log(crAPI);
 
-$.getJSON(crAPI, function (data) {
-	//console.log(data.16000US1714000.B01001.estimate.B01001001);
-	console.log(data); //In case you want to check out all the data in the console.
-    
-    // Get the numbers we want from the various tables and store them as vars.
+$.ajax({
+	url: crAPI,
+	//handle as text
+	dataType: "text",
+	success: function(data){
+	console.log(data); //Check out all the data in the console.
+	var json = $.parseJSON(data);
 
+    console.log(json.16000US1714000);
+    // Get the numbers we want from the various tables and store them as vars.
+	}
 });
 
 
