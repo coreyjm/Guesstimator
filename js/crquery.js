@@ -24,10 +24,10 @@ $.getJSON(crAPI, function (json) {
 	console.log(json.data); //down to data level works
 	
 	//This chokes and I don't know why?
-	//console.log(json.data.16000US1714000); 
+	console.log(json.data.16000US1714000); 
 
-	//Also breaks if I just do this, which is actually preferable for this project ...
-	//console.log(json.data[0]); 
+	//Also breaks with an undefined if I just do this, which is actually preferable for this project ...
+	console.log(json.data[0]); 
 
     //This is what I want to get at:
     //console.log(json.data[0].B01001.estimate.B01001001);
