@@ -1,7 +1,11 @@
 
 var city = "16000US1714000";
+var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids=B01001,B01002&geo_ids="+city;
 
-var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+console.log = crAPI;
+
+/* var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+
   $.getJSON( flickerAPI, {
     tags: "mount rainier",
     tagmode: "any",
@@ -15,3 +19,4 @@ var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncal
         }
       });
     });
+*/
