@@ -18,4 +18,4 @@ Setup
 
 [bootstrap](http://getbootstrap.com/)
 
-**AND LOOOOOOVE. &hearts;&hearts;&hearts;&hearts; **
+**AND LOOOOOOVE.** &hearts;&hearts;&hearts;&hearts; 
