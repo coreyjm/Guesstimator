@@ -21,7 +21,7 @@
   </head>
   <body>
 
-    <div class="container">
+    
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -40,36 +40,33 @@
             </ul>
           </div>
         </nav>
+        <div class="container">
+        	<h1>Guesstimator</h1>
+    			<h4>Here are the rules:</h4>
+    			<ul>
+    				<li>Your Goal: Answer each question such that you will be right 90% of the time.</li>
+    				<li>Do not research the answers on the Internet.</li>
+    				<li>Do not spend more than 5 minutes answering all 10 questions.</li>
+    			</ul>
 
-    	<h1>Guesstimator</h1>
-			<h4>Here are the rules:</h4>
-			<ul>
-				<li>Your Goal: Answer each question such that you will be right 90% of the time.</li>
-				<li>Do not research the answers on the Internet.</li>
-				<li>Do not spend more than 5 minutes answering all 10 questions.</li>
-			</ul>
+    			<div class="questions"></div>
+    			<a href="#" id="guess" class="btn btn-info">Guesstimate</a>
+          <div id="score"></div>
 
-			<div class="questions"></div>
-			<a href="#" id="guess" class="btn btn-info">Guesstimate</a>
-      <div id="score"></div>
-
-		</div>-->
+		    </div> <!--put a lid on that container-->
     <!-- All your scripts n' such go down here -->
 
     
 
 		<script src="http://code.jquery.com/jquery.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script> //toggle that sidebar, y'all
+    <script> //a fancy hamburger, y'all
 
     $(document).ready(function () {
         $(".navbar-toggle").on("click", function () {
             $(this).toggleClass("active");
             });
         });
-        $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
     });
     </script>
     <script src="js/questions-answers.js"></script>
