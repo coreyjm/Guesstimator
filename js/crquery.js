@@ -31,8 +31,6 @@ $.getJSON(crAPI, function (json) {
 
     //This is what I want to get at:
     //console.log(json.data[0].B01001.estimate.B01001001);
-    
-    // Get the numbers we want from the various tables and store them as vars.
 
 });
 
