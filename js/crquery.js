@@ -23,8 +23,8 @@ $.getJSON(crAPI, function (json) {
 	console.log(json); //Check out all the data in the console.
 	console.log(json.data); //down to data level works
 	
-	//This chokes and I don't know why?
-	console.log(json.data.16000US1714000); 
+	//This chokes with Uncaught SyntaxError: Unexpected token ILLEGAL and I don't know why?
+	//console.log(json.data.16000US1714000); 
 
 	//Also breaks with an undefined if I just do this, which is actually preferable for this project ...
 	console.log(json.data[0]); 
