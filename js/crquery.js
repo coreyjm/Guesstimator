@@ -16,7 +16,17 @@ var tables =
 
 
 var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids="+tables+"&geo_ids="+city;
-console.log(crAPI);
+//console.log(crAPI);
+
+$.getJSON(crAPI, function (data) {
+    
+    // Get the numbers we want from the various tables and store them as vars.
+    var totalpop = data.response.+city+.B01001.estimate.B01001001;
+
+
+
+    console.log("Total population: " + totalpop);
+});
 
 
 /* var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
