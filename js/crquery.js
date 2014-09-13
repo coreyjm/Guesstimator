@@ -26,7 +26,7 @@ $.ajax({
 	console.log(data); //Check out all the data in the console.
 	var json = $.parseJSON(data);
 
-    console.log(json.16000US1714000);
+    console.log(json."16000US1714000");
     // Get the numbers we want from the various tables and store them as vars.
 	}
 });
