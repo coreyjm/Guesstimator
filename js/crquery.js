@@ -20,7 +20,7 @@ console.log(crAPI);
 
 $.getJSON(crAPI, function (json) {
 
-	console.log(json.response); //Check out all the data in the console.
+	console.log(json.response.data); //Check out all the data in the console.
 	console.log(json.data); //down to data level works
 	
 	//This chokes with Uncaught SyntaxError: Unexpected token ILLEGAL and I don't know why?
