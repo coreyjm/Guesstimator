@@ -23,10 +23,13 @@ $.getJSON(crAPI, function (json) {
 	console.log(json); //Check out all the data in the console.
 	console.log(json.data); //down to data level works
 	
-	//This chokes
+	//This chokes and I don't know why?
 	//console.log(json.data.16000US1714000); 
 
-    //This is what I think the right thing should be:
+	//Also breaks if I just do this, which is actually preferable for this project ...
+	//console.log(json.data[0]); 
+
+    //This is what I want to get at:
     //console.log(json.data.16000US1714000.B01001.estimate.B01001001);
     
     // Get the numbers we want from the various tables and store them as vars.
