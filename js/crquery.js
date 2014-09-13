@@ -15,7 +15,7 @@ var tables =
 	]
 
 }
-consoe.log(tables);
+console.log(tables);
 var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids=B01001,B01002&geo_ids="+city;
 
 
