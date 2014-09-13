@@ -24,13 +24,13 @@ $.getJSON(crAPI, function (data) {
 	console.log(data.data); //down to data level works
 	
 	//This chokes with Uncaught SyntaxError: Unexpected token ILLEGAL and I don't know why?
-	//console.log(json.data.16000US1714000); 
+	//console.log(data.data.16000US1714000); 
 
 	//Also breaks with an undefined if I just do this, which is actually preferable for this project ...
-	//console.log(json.data[0].B01001); 
+	//console.log(data.data[0].B01001); 
 
     //This is what I want to get at:
-    //console.log(json.data[0].B01001.estimate.B01001001);
+    //console.log(data.data[0].B01001.estimate.B01001001);
 
 });
 
