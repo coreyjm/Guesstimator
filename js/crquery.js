@@ -32,8 +32,6 @@ $.getJSON(crAPI, function (crdata) {
     //This is what I want to get at:
     //console.log(crdata.data[0].B01001.estimate.B01001001);
 
-    parseJSON(cr)
-
 });
 
 
