@@ -38,7 +38,7 @@ $.getJSON(crAPI, function (crdata) {
 
 */
 $.getJSON( "js/crdata.js", function( json ) {
-  console.log( "JSON Data: " + json.data);
+  console.log( "totalpop: " + json.data.16000US1714000.B01001.estimate.B01001001);
  });
 /* var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 
