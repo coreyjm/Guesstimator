@@ -23,6 +23,9 @@ $.getJSON(crAPI, function (crdata) {
 	console.log(crdata); //Check out all the data in the console.
 	console.log(crdata.data); //down to data object level works
 	
+	var weird = crdata.data;
+
+	console.log(weird);
 	//Chokes when I try to dig to city id level with Uncaught SyntaxError: Unexpected token ILLEGAL
 	//console.log(crdata.data.16000US1714000); 
 
