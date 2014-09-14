@@ -1,4 +1,4 @@
-/*
+
 var city = "16000US1714000";
 var tables = 
 	[
@@ -36,11 +36,8 @@ $.getJSON(crAPI, function (crdata) {
 
 });
 
-*/
-$.getJSON( "js/crdata.js", function( json ) {
-	var totalpop = json.data.16000US1714000.B01001.estimate.B01001001);
-  console.log( "totalpop: " + totalpop );
- });
+
+
 /* var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 
   $.getJSON( flickerAPI, {
