@@ -37,8 +37,8 @@ $.getJSON(crAPI, function (crdata) {
 });
 
 */
-$.getJSON( "crdata.js", function( json ) {
-  console.log( "JSON Data: " + crdata.data[0].B01001.estimate.B01001001);
+$.getJSON( "js/crdata.js", function( json ) {
+  console.log( "JSON Data: " + crdata.data.16000US1714000.B01001.estimate.B01001001);
  });
 /* var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 
