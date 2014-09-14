@@ -38,7 +38,7 @@ $.getJSON(crAPI, function (crdata) {
 
 */
 $.getJSON( "js/crdata.js", function( json ) {
-	var totalpop = $.parseJSON(json.data.16000US1714000.B01001.estimate.B01001001);
+	var totalpop = $.parseJSON(json.data[0].B01001.estimate.B01001001);
   console.log( "totalpop: " + totalpop );
  });
 /* var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
