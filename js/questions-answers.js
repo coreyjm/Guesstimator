@@ -36,7 +36,7 @@ var questionsAnswers = {
 			"answer" : marriedCoupFam
 	},	
 	"question-7": {
-			"question" : "How many women live in "+city"?",
+			"question" : "How many women live in "+city+"?",
 			"answer" : totalWomen
 	},	
 	"question-8": {
