@@ -19,9 +19,9 @@ var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids="+tabl
 console.log(crAPI);
 
 $.getJSON(crAPI, function (crdata) {
-	var obj = $.parseJSON(crdata);
+
 	console.log(crdata); //Check out all the data in the console.
-	console.log(obj); //down to data object level works
+	console.log(crdata.data); //down to data object level works
 
 	//Chokes when I try to dig to city id level with Uncaught SyntaxError: Unexpected token ILLEGAL
 	//console.log(crdata.data.16000US1714000); 
