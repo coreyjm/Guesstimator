@@ -13,7 +13,16 @@ var tables =
 	"B09020", //seniors
 	"B11009", //same-sex couples
 	];
-
+var totalPopulation = 2714844;
+var medianAge = 33.6;
+var under18 = 612404;
+var medianIncome = 45214;
+var povertyPct = (2666002/totalPopulation)*100;
+var marriedCoupFam = 332025;
+var totalWomen = 1399062;
+var mexicanOrigin = 593289;
+var seniors = 296635;
+var samesexCouples = 6048 + 3113;
 
 var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids="+tables+"&geo_ids="+city;
 console.log(crAPI);
