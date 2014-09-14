@@ -38,10 +38,10 @@ $(document).ready(function(){
 
 function populateQuestions(){
 	
-	var html = ["<div class='row'><div class='col-sm-12 quest'>Questions</div></div><div class='row'><div class='col-sm-6 lowest'>Low Estimate</div><div class='col-sm-6 highest'>High estimate</div></div><div class='row'><div class='final col-sm-12'></div></div>"];
+	var html = ["<div class='row'><div class='col-sm-12 quest'>Questions</div></div><div class='row'></div><div class='row'><div class='final col-sm-12'></div></div>"];
 	
 	for (var i = 1; i <= 10; i++) {
-    html.push("<div class='row question-row' data-question='question-" + i + "'><div class='col-sm-12 quest'>" + questionsAnswers['question-' + i]['question'] + "</div><div class='col-sm-6 lowest'><input type='text' name='low'></div><div class='col-sm-6 highest'><input type='text' name='high'></div><div class='final col-sm-12'></div></div>");
+    html.push("<div class='row question-row' data-question='question-" + i + "'><div class='col-sm-12 quest'>" + questionsAnswers['question-' + i]['question'] + "</div><div class='col-sm-6 lowest'><input type='text' name='low' value ='low estimate'></div><div class='col-sm-6 highest'><input type='text' name='high' value= 'High estimate'></div><div class='final col-sm-12'></div></div>");
 	}
 
 	$('.questions').html(html.join(''));
