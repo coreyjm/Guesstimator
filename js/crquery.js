@@ -82,8 +82,8 @@ $.getJSON(crAPI, function (crdata) {
 	/*
 	!!!!!
 	Need to do this smarter so people can monkey around with different cities 
-	and change stuff in queries object, 
-	but right now, I cant think that hard, so let's just be janky ...
+	and change stuff in queries object without changing it here, 
+	but right now, I cant think that hard, so I'll just be janky ...
 	!!!!!
 	*/
 	var totalPopulation = crdata.data["16000US1714000"].B01003.estimate.B01003001;
