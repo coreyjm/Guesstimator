@@ -72,14 +72,14 @@ $.each(queries, function() {
     /// push tables into tables array
     if (name == "table"){
     	tables.push(value);
-    	console.log(tables);
+    	//console.log(tables);
     };
     
   });
 });
 //Feed tables into url that queries the census reporter api
-//var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids="+tables+"&geo_ids="+city;
-
+var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids="+tables+"&geo_ids="+city;
+	console.log(crAPI);
 
 //get the data
 $.getJSON(crAPI, function (crdata) {
