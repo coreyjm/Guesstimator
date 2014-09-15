@@ -2,7 +2,7 @@
 var city= "Chicago"
 var cityCode = "16000US1714000";
 
-var tables = //Methinks this should be an object with tables and rows.
+/*var tables = 
 	[
 	"B01003", //total population table. Total row = B01003001
 	"B01002", //median age by sex. Total row = B01002001
@@ -15,17 +15,56 @@ var tables = //Methinks this should be an object with tables and rows.
 	"B09020", //seniors. Total row = B09020001.
 	"B11009", //same-sex couples. Male + male row = B11009003. Female + female row = B11009005.
 	];
-var totalPopulation = 2714844;
-var medianAge = 33.6;
-var under18 = 612404;
-var medianIncome = 45214;
-var povertyPct = (2666002/totalPopulation)*100;
-var marriedCoupFam = 332025;
-var totalWomen = 1399062;
-var mexicanOrigin = 593289;
-var seniors = 296635;
-var samesexCouples = 6048 + 3113;
-
+*/
+//Let's make objects with tables and rows associated!
+var totalPopulation = {
+	table: "B01003",
+	row: "B01003001"
+};
+var medianAge = {
+	table: "B01002",
+	row: "B01002001"
+};
+var under18 = {
+	table: "B09001",
+	row: "B09001001"
+};
+var medianIncome = {
+	table: "B19013",
+	row: "B19013001"
+};
+var poverty = {
+	table: "B17001",
+	row: "B17001001"
+};
+var marriedCoupFam = {	
+	table: "B11001",
+	row: "B11001003"
+};
+var totalWomen = {
+	table: "B01001",
+	row: "B01001026"
+};
+var mexicanOrigin = {
+	table: "C03001",
+	row: "C03001004"
+};
+var seniors = {
+	table: "B09020",
+	row: "B09020001"
+};
+var samesexMen = {
+	table: "B11009",
+	row: "B11009003"
+};
+var samesexWomen{
+	table: "B11009",
+	row: "B11009005"
+};
+//Dump all the objects into an array to help us build the queries.
+var queries = [totalPopulation, medianAge, under18, medianIncome, poverty, marriedCoupFam, totalWomen, mexicanOrigin, seniors, samesexMen, samesexWomen]
+var tables = 
+//Query the census reporter api
 var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids="+tables+"&geo_ids="+city;
 //console.log(crAPI);
 
