@@ -56,9 +56,13 @@ input[type="text"] {
   top: 90px;
 }
 
+.btn-info {
+  margin-top: 30px;
+}
+
 label { font-weight: normal; }
 
-.col-sm-12.quest {
+.col-xs-12.quest {
   font-weight: bold;
   font-size: 17px;
   margin: 20px 0 5px;
