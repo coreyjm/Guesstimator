@@ -61,6 +61,7 @@ var queries = {
 		samesexWomen: {
 			table: "B11009",
 			row: "B11009005"
+		}
 };
 
 console.log(queries.totalFem.row)
