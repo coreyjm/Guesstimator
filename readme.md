@@ -14,8 +14,8 @@ Setup
 ##Built with
 [CensusReporter](http://censusreporter.org/)
 
-[Tabletop](https://github.com/jsoma/tabletop)
-
 [Bootstrap](http://getbootstrap.com/)
+
+Some real janky coding to avoid using any backend at all …
 
 **AND LOOOOOOVE.** &hearts;&hearts;&hearts;&hearts; 
