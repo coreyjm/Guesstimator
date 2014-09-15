@@ -81,9 +81,9 @@ $.getJSON(crAPI, function (crdata) {
 	//If you decide to look at different tables and rows, you'll want to make these vars match your data.
 	/*
 	!!!!!
-	Will do this smarter so people can monkey around with different cities 
-	and change tables and rows in queries object, 
-	but right now, I cant think that hard, so let's be janky ...
+	Need to do this smarter so people can monkey around with different cities 
+	and change stuff in queries object, 
+	but right now, I cant think that hard, so let's just be janky ...
 	!!!!!
 	*/
 	var totalPopulation = crdata.data["16000US1714000"].B01003.estimate.B01003001;
