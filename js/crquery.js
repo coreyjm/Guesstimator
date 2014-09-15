@@ -78,11 +78,13 @@ var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids="+tabl
 $.getJSON(crAPI, function (crdata) {
 
 	//Find the data we need and save numbers as vars.
-	//If you decide to look at different tables and rows, you'll want to make these var names match your data.
+	//If you decide to look at different tables and rows, you'll want to make these vars match your data.
 	/*
+	!!!!!
 	Will do this smarter so people can monkey around with different cities 
 	and change tables and rows in queries object, 
 	but right now, I cant think that hard, so let's be janky ...
+	!!!!!
 	*/
 	var totalPopulation = crdata.data["16000US1714000"].B01003.estimate.B01003001;
 	var medianAge = crdata.data["16000US1714000"].B01002.estimate.B01002001;
@@ -95,12 +97,12 @@ $.getJSON(crAPI, function (crdata) {
 	var seniors = crdata.data["16000US1714000"].B09020.estimate.B09020001;
 	var samesexM = crdata.data["16000US1714000"].B11009.estimate.B11009003;
 	var samesexW = crdata.data["16000US1714000"].B11009.estimate.B11009005;
-	//console.log(totalPopulation, medianAge, under18, medianIncome, povertyT, marriedCoupFam, totalWomen, mexicanOrigin, seniors, samesexM, samesexW);
+	console.log(totalPopulation, medianAge, under18, medianIncome, povertyT, marriedCoupFam, totalWomen, mexicanOrigin, seniors, samesexM, samesexW);
 
 	//make poverty a percentage and add to get samesex couples
 	var povertyPct = (povertyT/totalPopulation)*100
 	var samesexCouples = samesexM + samesexW 
-	//console.log(povertyPct, samesexCouples);
+	console.log(povertyPct, samesexCouples);
 });
 
 
