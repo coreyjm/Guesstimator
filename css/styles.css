@@ -56,6 +56,14 @@ input[type="text"] {
   top: 90px;
 }
 
+label { font-weight: normal; }
+
+.col-sm-12.quest {
+  font-weight: bold;
+  font-size: 17px;
+  margin: 20px 0 5px;
+}
+
 /*----TYPE STUFFS----*/
 .navbar-brand, h1, th{
 	font-family: 'Francois One', sans-serif;

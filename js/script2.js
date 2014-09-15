@@ -38,19 +38,31 @@ $(document).ready(function(){
 
 function populateQuestions(){
 	
-	var html = [],
-			indicators = [];
+	var html = ["<div class='row'><div class='col-sm-12 quest'>Questions</div></div><div class='row'></div><div class='row'><div class='final col-sm-12'></div></div>"];
 	
 	for (var i = 1; i <= 10; i++) {
-
-		var active = i==1 ? " active" : "";
-		
-		indicators.push("<li data-target='#guesstimate' data-slide-to='" + (i-1) + "' class='" + active + "'></li>");
-    
-    html.push("<div class='item" + active + "'> <div style='height: 315px; width: 1200px; background-color:gray;'></div> <div class='carousel-caption'> <div class='row question-row' data-question='question-" + i + "'><div class='col-sm-12 quest'>" + questionsAnswers['question-' + i]['question'] + "</div><div class='col-sm-6 lowest'><label>Low estimate</label><input class='form-control' type='text' name='low'></div><div class='col-sm-6 highest'><label>High estimate</label><input class='form-control' type='text' name='high'></div><div class='final col-sm-12'></div></div> </div> </div>");
+    html.push("<div class='row question-row' data-question='question-" + i + "'><div class='col-sm-12 quest'>#" + i + ": " +  questionsAnswers['question-' + i]['question'] + "</div><div class='col-sm-6 lowest'><label>Low estimate</label><input class='form-control' type='text' name='low'></div><div class='col-sm-6 highest'><label>High estimate</label><input class='form-control' type='text' name='high'></div><div class='final col-sm-12'></div></div>");
 	}
 
-	$('.carousel-indicators').html(indicators.join(''));
-	$('.carousel-inner').html(html.join(''));
+	$('.questions').html(html.join(''));
 
 }
+
+// function populateQuestions(){
+	
+// 	var html = [],
+// 			indicators = [];
+	
+// 	for (var i = 1; i <= 10; i++) {
+
+// 		var active = i==1 ? " active" : "";
+		
+// 		indicators.push("<li data-target='#guesstimate' data-slide-to='" + (i-1) + "' class='" + active + "'></li>");
+    
+//     html.push("<div class='item" + active + "'> <div style='height: 315px; width: 1200px; background-color:gray;'></div> <div class='carousel-caption'> <div class='row question-row' data-question='question-" + i + "'><div class='col-sm-12 quest'>" + questionsAnswers['question-' + i]['question'] + "</div><div class='col-sm-6 lowest'><label>Low estimate</label><input class='form-control' type='text' name='low'></div><div class='col-sm-6 highest'><label>High estimate</label><input class='form-control' type='text' name='high'></div><div class='final col-sm-12'></div></div> </div> </div>");
+// 	}
+
+// 	$('.carousel-indicators').html(indicators.join(''));
+// 	$('.carousel-inner').html(html.join(''));
+
+// }
