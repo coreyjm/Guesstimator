@@ -67,9 +67,9 @@ var queries = {
 //loop through queries object to extract tables
 $.each( query, function( table, val ) {
   console.log(val);
-}
+};
 //Feed tables into url that queries the census reporter api
-var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids="+tables+"&geo_ids="+city;
+//var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids="+tables+"&geo_ids="+city;
 
 
 //get the data
