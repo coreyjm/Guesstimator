@@ -16,83 +16,69 @@ var cityCode = "16000US1714000";
 	"B11009", //same-sex couples. Male + male row = B11009003. Female + female row = B11009005.
 	];
 */
-//Let's make objects with tables and rows associated!
-var totalPopulation = {
-	table: "B01003",
-	row: "B01003001"
+//Make a big 'ol queries object full of all the individual queries with associated tables and rows.
+var queries = {
+		totalPop: {
+			table: "B01003",
+			row: "B01003001"
+		},
+		medAge: {
+			table: "B01002",
+			row: "B01002001"
+		},
+		children: {
+			table: "B09001",
+			row: "B09001001"
+		},
+		medIncome: {
+			table: "B19013",
+			row: "B19013001"
+		},
+		poverty: {
+			table: "B17001",
+			row: "B17001001"
+		},
+		marriedCoupleFams: {	
+			table: "B11001",
+			row: "B11001003"
+		},
+		totalFem: {
+			table: "B01001",
+			row: "B01001026"
+		},
+		totalMexican: {
+			table: "C03001",
+			row: "C03001004"
+		},
+		totalSeniors: {
+			table: "B09020",
+			row: "B09020001"
+		},
+		samesexMen: {
+			table: "B11009",
+			row: "B11009003"
+		},
+		samesexWomen: {
+			table: "B11009",
+			row: "B11009005"
 };
-var medianAge = {
-	table: "B01002",
-	row: "B01002001"
-};
-var under18 = {
-	table: "B09001",
-	row: "B09001001"
-};
-var medianIncome = {
-	table: "B19013",
-	row: "B19013001"
-};
-var poverty = {
-	table: "B17001",
-	row: "B17001001"
-};
-var marriedCoupFam = {	
-	table: "B11001",
-	row: "B11001003"
-};
-var totalWomen = {
-	table: "B01001",
-	row: "B01001026"
-};
-var mexicanOrigin = {
-	table: "C03001",
-	row: "C03001004"
-};
-var seniors = {
-	table: "B09020",
-	row: "B09020001"
-};
-var samesexMen = {
-	table: "B11009",
-	row: "B11009003"
-};
-var samesexWomen{
-	table: "B11009",
-	row: "B11009005"
-};
-//Dump all the objects into an array to help us build the queries.
-var queries = [totalPopulation, medianAge, under18, medianIncome, poverty, marriedCoupFam, totalWomen, mexicanOrigin, seniors, samesexMen, samesexWomen]
-var tables = 
-//Query the census reporter api
+
+console.log(queries.totalFem.row)
+
+//loop through queries object to extract tables
+
+
+//Feed tables into url that queries the census reporter api
 var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids="+tables+"&geo_ids="+city;
-//console.log(crAPI);
 
-var 
 
+//get the data
 $.getJSON(crAPI, function (crdata) {
 
-	//console.log(crdata); //Check out all the data in the console.
-	
-	console.log(crdata.data["16000US1714000"].B01001.estimate.B01001001); 
+	//run the queries on the data and save numbers as vars
+	//example console.log(crdata.data["16000US1714000"].B01001.estimate.B01001001); 
 
 });
 
 
 
-/* var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
-
-  $.getJSON( flickerAPI, {
-    tags: "mount rainier",
-    tagmode: "any",
-    format: "json"
-  })
-    .done(function( data ) {
-      $.each( data.items, function( i, item ) {
-        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#query" );
-        if ( i === 3 ) {
-          return false;
-        }
-      });
-    });
-*/
