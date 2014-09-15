@@ -84,6 +84,8 @@ $.getJSON(crAPI, function (crdata) {
 	and change tables and rows in queries object, 
 	but right now, I cant think that hard, so let's be janky ...
 	*/
+	var cityCodeBrackets = '["'+cityCode+'"]'
+	console.log(cityCodeBrackets);
 	var totalPopulation = crdata.data["16000US1714000"].B01003.estimate.B01003001;
 	var medianAge = crdata.data["16000US1714000"].B01002.estimate.B01002001;
 	var under18 = crdata.data["16000US1714000"].B09001.estimate.B09001001;
