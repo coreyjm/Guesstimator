@@ -82,12 +82,12 @@ var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids="+tabl
 	console.log(crAPI);
 
 //get the data
-$.getJSON(crAPI, function (crdata) {
+//$.getJSON(crAPI, function (crdata) {
 
 	//run the queries on the data and save numbers as vars
 	//example console.log(crdata.data["16000US1714000"].B01001.estimate.B01001001); 
 
-});
+//});
 
 
 
