@@ -1,4 +1,5 @@
 var city = "Chicago";
+var cityCode = "16000US1714000";
 var totalPopulation = 2714844;
 var medianAge = 33.6;
 var under18 = 612404;
