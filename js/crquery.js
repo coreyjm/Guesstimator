@@ -65,7 +65,7 @@ var queries = {
 };
 
 //loop through queries object to extract tables
-$.each( query, function( i, val ) {
+$.each( queries, function( i, val ) {
   console.log(val);
 };
 //Feed tables into url that queries the census reporter api
