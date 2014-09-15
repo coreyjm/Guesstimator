@@ -52,6 +52,10 @@ input[type="text"] {
 	width: 100%;
 }
 
+.carousel-caption {
+  top: 90px;
+}
+
 /*----TYPE STUFFS----*/
 .navbar-brand, h1, th{
 	font-family: 'Francois One', sans-serif;
