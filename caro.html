@@ -21,7 +21,7 @@
   </head>
   <body>
 
-    
+
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -41,25 +41,50 @@
           </div>
         </nav>
         <div class="container">
-        	<h1>Guesstimator</h1>
-          <p>Welcome to ONA 14 in Chicago! We made a little game to see how well you know the city of big shoulders and to see how good you are at estimating.
-    			<h4>The rules:</h4>
-    			<ul>
-    				<li>Your goal is to score 90% or better.</li>
-    				<li>Don't cheat and check the answers on the Internet!</li>
-    				<li>You have five minutes ... GO!</li>
-    			</ul>
 
-    			<div class="questions"></div>
-    			<a href="#" id="guess" class="btn btn-info">Guesstimate</a>
-          <div id="score"></div>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+         
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <div style="height: 315px; width: 1200px; background-color:gray;"></div>
+              <div class="carousel-caption">
+                  <h3>Caption Text</h3>
+              </div>
+            </div>
+            <div class="item">
+              <div style="height: 315px; width: 1200px; background-color:gray;"></div>
 
-		    </div> <!--put a lid on that container-->
-    <!-- All your scripts n' such go down here -->
+              <div class="carousel-caption">
+                  <h3>Caption Text</h3>
+              </div>
+            </div>
+            <div class="item">
+              <div style="height: 315px; width: 1200px; background-color:gray;"></div>
 
-    
+              <div class="carousel-caption">
+                  <h3>Caption Text</h3>
+              </div>
+            </div>
+          </div>
+         
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div> <!-- Carousel -->
+      </div>
 
-		<script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script> //a fancy hamburger, y'all
 
@@ -69,9 +94,7 @@
         });
     });
     </script>
-    <script src="js/questions-answers.js"></script>
-    <script src="js/script2.js"></script>
 
-	</body>
+
+  </body>
 </html>
-
