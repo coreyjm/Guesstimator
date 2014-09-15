@@ -64,13 +64,16 @@ var queries = {
 		}
 };
 
+var tables = [];
+
 //loop through queries object to extract tables
 $.each(queries, function() {
   $.each(this, function(name, value) {
-    /// do stuff
+    /// push tables into tables array
     if (name == "table"){
-    	console.log(value);
-    }
+    	tables.push(value);
+    	console.log(tables);
+    };
     
   });
 });
