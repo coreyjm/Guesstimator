@@ -86,9 +86,20 @@ var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids="+tabl
 $.getJSON(crAPI, function (crdata) {
 
 	//find the data we need and save numbers as vars
-	//we should do this programattically, but right now, I cant think that hard …
+	//we should do this programattically so people can monkey around with this more easily, 
+	//but right now, I cant think that hard, so let's be janky ...
+	var totalPopulation = crdata.data["16000US1714000"].B01003.estimate.B01003001;
+	var medianAge = crdata.data["16000US1714000"].B01002.estimate.B01002001;
+	var under18 = crdata.data["16000US1714000"].B09001.estimate.B09001001;
+	var medianIncome = crdata.data["16000US1714000"].B19013.estimate.B19013001;
+	var povertyT = crdata.data["16000US1714000"].B17001.estimate.B17001001;
+	var marriedCoupFam = crdata.data["16000US1714000"].B01001.estimate.B01001026;
 	var totalWomen = crdata.data["16000US1714000"].B01001.estimate.B01001026;
-	console.log(totalWomen);
+	var mexicanOrigin = crdata.data["16000US1714000"].C03001.estimate.C03001004;
+	var seniors = crdata.data["16000US1714000"].B09020.estimate.B09020001;
+	var samesexM = crdata.data["16000US1714000"].B11009.estimate.B11009003;
+	var samesexW = crdata.data["16000US1714000"].B11009.estimate.B11009005;
+	console.log(totalPopulation, medianAge, under18, medianIncome, povertyT, marriedCoupFam, totalWomen, mexicanOrigin, seniors, samesexM, samesexW);
 
 	//example console.log(crdata.data["16000US1714000"].B01001.estimate.B01001001); 
 
