@@ -1,7 +1,8 @@
 
 var city= "Chicago"
 var cityCode = "16000US1714000";
-var tables = 
+
+var tables = //Methinks this should be an object with tables and rows.
 	[
 	"B01003", //total population table. Total row = B01003001
 	"B01002", //median age by sex. Total row = B01002001
