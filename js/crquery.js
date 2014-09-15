@@ -7,7 +7,7 @@ var cityCode = "16000US1714000"; //Change this for your city!
 Now we make a big 'ol queries object full of all the individual queries with associated tables and 
 rows from the data we found at census reporter.
 
-If you want to change your data, you just change tables & rows and the query name in this object, as needed.
+If you want to change your data, you can change tables & rows and the query name in this object, as needed.
 
 For other table ideas, check out interesting topics at http://censusreporter.org/topics/
 */
@@ -61,10 +61,10 @@ var queries = {
 var tables = [];
 
 //loop through queries object to extract tables
-$.each(queries, function() {
-  $.each(this, function(name, value) {
-    if (name == "table"){ 
-    	tables.push(value); // push tables into tables array
+$.each(queries, function() { //loop through the queries object
+  $.each(this, function(name, value) { //loop through each individual query
+    if (name == "table"){   //if the name is "table"
+    	tables.push(value); // push the value into tables array
     };
     
   });
@@ -97,12 +97,15 @@ $.getJSON(crAPI, function (crdata) {
 	var seniors = crdata.data["16000US1714000"].B09020.estimate.B09020001;
 	var samesexM = crdata.data["16000US1714000"].B11009.estimate.B11009003;
 	var samesexW = crdata.data["16000US1714000"].B11009.estimate.B11009005;
-	console.log(totalPopulation, medianAge, under18, medianIncome, povertyT, marriedCoupFam, totalWomen, mexicanOrigin, seniors, samesexM, samesexW);
+	//console.log(totalPopulation, medianAge, under18, medianIncome, povertyT, marriedCoupFam, totalWomen, mexicanOrigin, seniors, samesexM, samesexW);
 
 	//make poverty a percentage and add to get samesex couples
 	var povertyPct = (povertyT/totalPopulation)*100
 	var samesexCouples = samesexM + samesexW 
-	console.log(povertyPct, samesexCouples);
+	//console.log(povertyPct, samesexCouples);
+
+
+	//and now all the variables are populated and match those at the top of the questions-answers file. Boom.
 });
 
 
