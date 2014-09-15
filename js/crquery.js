@@ -101,8 +101,10 @@ $.getJSON(crAPI, function (crdata) {
 	var samesexW = crdata.data["16000US1714000"].B11009.estimate.B11009005;
 	console.log(totalPopulation, medianAge, under18, medianIncome, povertyT, marriedCoupFam, totalWomen, mexicanOrigin, seniors, samesexM, samesexW);
 
-	//example console.log(crdata.data["16000US1714000"].B01001.estimate.B01001001); 
-
+	//make poverty percentage and add samesex couples
+	var povertyPct = (povertyT/totalPopulation)*100
+	var samesexCouples = samesexM + samesexW 
+	console.log(povertyPct, samesexCouples);
 });
 
 
