@@ -77,14 +77,19 @@ $.each(queries, function() {
     
   });
 });
+
 //Feed tables into url that queries the census reporter api
 var crAPI = "http://api.censusreporter.org/1.0/data/show/latest?table_ids="+tables+"&geo_ids="+cityCode;
 	//console.log(crAPI);
 
 //get the data
 $.getJSON(crAPI, function (crdata) {
-	
-	//run the queries on the data and save numbers as vars
+
+	//find the data we need and save numbers as vars
+	//we should do this programattically, but right now, I cant think that hard …
+	var totalWomen = crdata.data["16000US1714000"].B01001.estimate.B01001026;
+	console.log(totalWomen);
+
 	//example console.log(crdata.data["16000US1714000"].B01001.estimate.B01001001); 
 
 });
