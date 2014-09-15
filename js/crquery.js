@@ -4,10 +4,12 @@ var cityCode = "16000US1714000"; //Change this for your city!
 
 
 /*
-Make a big 'ol queries object full of all the individual queries with associated tables and rows
-from the stuff we want at census reporter.
-So, if you want to change your data in another city, you just change tables & rows,
-and the query name, as needed.
+Now we make a big 'ol queries object full of all the individual queries with associated tables and 
+rows from the data we found at census reporter.
+
+If you want to change your data, you just change tables & rows and the query name in this object, as needed.
+
+For other table ideas, check out interesting topics at http://censusreporter.org/topics/
 */
 var queries = {
 		totalPop: {
@@ -82,7 +84,8 @@ $.getJSON(crAPI, function (crdata) {
 	and change tables and rows in queries object, 
 	but right now, I cant think that hard, so let's be janky ...
 	*/
-	var totalPopulation = crdata.data["16000US1714000"].B01003.estimate.B01003001;
+	var totalPopulation = crdata.data+'["'+cityCode+'"]'.B01003.estimate.B01003001;
+	console.log(totalPopulation);
 	var medianAge = crdata.data["16000US1714000"].B01002.estimate.B01002001;
 	var under18 = crdata.data["16000US1714000"].B09001.estimate.B09001001;
 	var medianIncome = crdata.data["16000US1714000"].B19013.estimate.B19013001;
