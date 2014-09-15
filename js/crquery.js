@@ -36,7 +36,7 @@ var queries = {
 		},
 		poverty: {
 			table: "B17001",
-			row: "B17001001"
+			row: "B17001002"
 		},
 		marriedCoupleFams: {	
 			table: "B11001",
@@ -92,7 +92,7 @@ $.getJSON(crAPI, function (crdata) {
 	var medianAge = crdata.data["16000US1714000"].B01002.estimate.B01002001;
 	var under18 = crdata.data["16000US1714000"].B09001.estimate.B09001001;
 	var medianIncome = crdata.data["16000US1714000"].B19013.estimate.B19013001;
-	var povertyT = crdata.data["16000US1714000"].B17001.estimate.B17001001;
+	var povertyT = crdata.data["16000US1714000"].B17001.estimate.B17001002;
 	var marriedCoupFam = crdata.data["16000US1714000"].B01001.estimate.B01001026;
 	var totalWomen = crdata.data["16000US1714000"].B01001.estimate.B01001026;
 	var mexicanOrigin = crdata.data["16000US1714000"].C03001.estimate.C03001004;
