@@ -66,9 +66,10 @@ var queries = {
 
 //loop through queries object to extract tables
 $.each(queries, function() {
-  $.each(this, function(name, value) {
+  $.each(this, function(table, value) {
     /// do stuff
-    console.log(name + '=' + value);
+
+    console.log(value);
   });
 });
 //Feed tables into url that queries the census reporter api
