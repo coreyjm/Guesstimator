@@ -26,6 +26,11 @@
       transform: rotate(-45deg);
 }
 
+/*----Colors, etc.--*/
+.navbar .navbar-inverse{
+  color: fff;
+  background-color: #B3DDF2;
+}
 
 /*----LAYOUT STUFFS----*/
 body { 
