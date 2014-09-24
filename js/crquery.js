@@ -86,17 +86,17 @@ $.getJSON(crAPI, function (crdata) {
 	but right now, I cant think that hard, so I'll just be janky ...
 	!!!!!
 	*/
-	var totalPopulation = crdata.data["16000US1714000"].B01003.estimate.B01003001;
-	var medianAge = crdata.data["16000US1714000"].B01002.estimate.B01002001;
-	var under18 = crdata.data["16000US1714000"].B09001.estimate.B09001001;
-	var medianIncome = crdata.data["16000US1714000"].B19013.estimate.B19013001;
-	var povertyT = crdata.data["16000US1714000"].B17001.estimate.B17001002;
-	var marriedCoupFam = crdata.data["16000US1714000"].B01001.estimate.B01001026;
-	var totalWomen = crdata.data["16000US1714000"].B01001.estimate.B01001026;
-	var mexicanOrigin = crdata.data["16000US1714000"].C03001.estimate.C03001004;
-	var seniors = crdata.data["16000US1714000"].B09020.estimate.B09020001;
-	var samesexM = crdata.data["16000US1714000"].B11009.estimate.B11009003;
-	var samesexW = crdata.data["16000US1714000"].B11009.estimate.B11009005;
+	var totalPopulation = crdata.data[cityCode].B01003.estimate.B01003001;
+	var medianAge = crdata.data[cityCode].B01002.estimate.B01002001;
+	var under18 = crdata.data[cityCode].B09001.estimate.B09001001;
+	var medianIncome = crdata.data[cityCode].B19013.estimate.B19013001;
+	var povertyT = crdata.data[cityCode].B17001.estimate.B17001002;
+	var marriedCoupFam = crdata.data[cityCode].B01001.estimate.B01001026;
+	var totalWomen = crdata.data[cityCode].B01001.estimate.B01001026;
+	var mexicanOrigin = crdata.data[cityCode].C03001.estimate.C03001004;
+	var seniors = crdata.data[cityCode].B09020.estimate.B09020001;
+	var samesexM = crdata.data[cityCode].B11009.estimate.B11009003;
+	var samesexW = crdata.data[cityCode].B11009.estimate.B11009005;
 	//console.log(totalPopulation, medianAge, under18, medianIncome, povertyT, marriedCoupFam, totalWomen, mexicanOrigin, seniors, samesexM, samesexW);
 
 	//make poverty a percentage and add to get samesex couples
