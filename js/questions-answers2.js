@@ -106,6 +106,49 @@ $.getJSON(crAPI, function (crdata) {
 	console.log(totalPopulation);
 	console.log(samesexM)
 
+	var questionsAnswers = {
+		"question-1": {
+				"question" : "What is the total population of "+city+"?",
+				"answer" : totalPopulation
+		},	
+		"question-2": {
+				"question" : "What is the median age of people in "+city+"?",
+				"answer" : medianAge
+		},	
+		"question-3": {
+				"question" : "How many children (under 18) live in "+city+"?",
+				"answer" : under18
+		},	
+		"question-4": {
+				"question" : "What is the median income in "+city+"?",
+				"answer" : medianIncome
+		},	
+		"question-5": {
+				"question" : "What percentage of people in "+city+" live in poverty?",
+				"answer" : povertyPct
+		},	
+		"question-6": {
+				"question" : "How many families of married couples live in "+city+"?",
+				"answer" : marriedCoupFam
+		},	
+		"question-7": {
+				"question" : "How many women live in "+city+"?",
+				"answer" : totalWomen
+		},	
+		"question-8": {
+				"question" : city+" has awesome tacos. About how many people of Mexican origin live here?",
+				"answer" : mexicanOrigin
+		},	
+		"question-9": {
+				"question" : "How many senior citizens (older than 65) live in "+city+"?",
+				"answer" : seniors
+		},	
+		"question-10": {
+				"question" : "Gay marriage came to "+city+" in June. How many same-sex couples live here?",
+				"answer" : samesexCouples
+		}
+	};	
+
 	//and now all the variables are populated and match those at the top of the questions-answers file. Boom.
 });
 
@@ -113,45 +156,3 @@ $.getJSON(crAPI, function (crdata) {
 
 
 
-var questionsAnswers = {
-	"question-1": {
-			"question" : "What is the total population of "+city+"?",
-			"answer" : totalPopulation
-	},	
-	"question-2": {
-			"question" : "What is the median age of people in "+city+"?",
-			"answer" : medianAge
-	},	
-	"question-3": {
-			"question" : "How many children (under 18) live in "+city+"?",
-			"answer" : under18
-	},	
-	"question-4": {
-			"question" : "What is the median income in "+city+"?",
-			"answer" : medianIncome
-	},	
-	"question-5": {
-			"question" : "What percentage of people in "+city+" live in poverty?",
-			"answer" : povertyPct
-	},	
-	"question-6": {
-			"question" : "How many families of married couples live in "+city+"?",
-			"answer" : marriedCoupFam
-	},	
-	"question-7": {
-			"question" : "How many women live in "+city+"?",
-			"answer" : totalWomen
-	},	
-	"question-8": {
-			"question" : city+" has awesome tacos. About how many people of Mexican origin live here?",
-			"answer" : mexicanOrigin
-	},	
-	"question-9": {
-			"question" : "How many senior citizens (older than 65) live in "+city+"?",
-			"answer" : seniors
-	},	
-	"question-10": {
-			"question" : "Gay marriage came to "+city+" in June. How many same-sex couples live here?",
-			"answer" : samesexCouples
-	}
-};
