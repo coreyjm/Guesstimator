@@ -180,7 +180,7 @@ $.getJSON(crAPI, function (crdata) {
 		});
 
 		if (!incomplete){
-			$('#score').html(score);
+			$('#score').html(score*10);
 		}
 
 	});
