@@ -1,6 +1,7 @@
 
 var city= "Chicago"; //Change this for your city!
 var cityCode = "16000US1714000"; //Change this for your city!
+var score = 0;
 
 
 /*
@@ -149,16 +150,6 @@ $.getJSON(crAPI, function (crdata) {
 		}
 	};
 
-
-	//and now all the variables are populated and match those at the top of the questions-answers file. Boom.
-});
-
-
-
-var score = 0;
-
-$(document).ready(function(){
-
 	var html = ["<div class='row'><div class='col-xs-12 quest'>Questions</div></div><div class='row'></div><div class='row'><div class='final col-xs-12'></div></div>"];
 	
 	for (var i = 1; i <= 10; i++) {
@@ -197,6 +188,15 @@ $(document).ready(function(){
 		}
 
 	});
+
+	//and now all the variables are populated and match those at the top of the questions-answers file. Boom.
+});
+
+
+
+
+$(document).ready(function(){
+
 
 })
 
