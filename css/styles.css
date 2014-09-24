@@ -82,7 +82,7 @@ label { font-weight: normal; }
 }
 
 /*----TYPE STUFFS----*/
-.navbar-brand, h1, h3, label{
+.navbar-brand, h1, h3, .quest{
 	font-family: 'Francois One', sans-serif;
 }
 h4{
