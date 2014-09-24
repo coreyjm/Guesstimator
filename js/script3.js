@@ -131,7 +131,7 @@ $.getJSON(crAPI, function (crdata) {
 				"answer" : totalWomen
 		},	
 		"question-8": {
-				"question" : city+" has awesome tacos. About how many people of Mexican origin live here?",
+				"question" : city+" has awesome tacos. How many people identify as being of Mexican origin here?",
 				"answer" : mexicanOrigin
 		},	
 		"question-9": {
