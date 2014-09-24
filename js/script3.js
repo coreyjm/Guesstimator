@@ -157,7 +157,7 @@ $.getJSON(crAPI, function (crdata) {
 	var html = ["<div class='row'><div class='col-xs-12 quest'>Questions</div></div><div class='row'></div><div class='row'><div class='final col-xs-12'></div></div>"];
 	
 	for (var i = 1; i <= 10; i++) {
-    html.push("<div class='row question-row' data-question='question-" + i + "'><div class='col-xs-12 questimg'><img src='"+questionsAnswers['question-' + i]['image']+"'></div><div class='col-xs-12 quest'>" + i + ": " +  questionsAnswers['question-' + i]['question'] + "</div><div class='col-xs-6 lowest'><label>Low estimate</label><input class='form-control' type='text' name='low'></div><div class='col-xs-6 highest'><label>High estimate</label><input class='form-control' type='text' name='high'></div><div class='final col-xs-12'></div></div>");
+    html.push("<div class='row question-row' data-question='question-" + i + "'><div class='col-xs-12 questimg'><p></p><img src='"+questionsAnswers['question-' + i]['image']+"'></div><div class='col-xs-12 quest'>" + i + ": " +  questionsAnswers['question-' + i]['question'] + "</div><div class='col-xs-6 lowest'><label>Low estimate</label><input class='form-control' type='text' name='low'></div><div class='col-xs-6 highest'><label>High estimate</label><input class='form-control' type='text' name='high'></div><div class='final col-xs-12'></div></div>");
 	}
 
 	$('.questions').html(html.join(''));

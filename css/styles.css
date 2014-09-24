@@ -76,6 +76,10 @@ label { font-weight: normal; }
   margin: 20px 0 5px;
 }
 
+.questimg{
+  text-align: center;
+}
+
 .row.question-row {
   border-top: 1px solid #EEE;
   padding-bottom: 25px;
