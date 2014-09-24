@@ -1,4 +1,4 @@
-/*--Animated hamburger ui--*/
+/*--Animated hamburger ui
 .navbar-toggle .icon-bar:nth-of-type(2) {
       top: 1px;
 }
@@ -24,7 +24,7 @@
 .navbar-toggle.active .icon-bar:nth-of-type(3) {
       top: -6px;
       transform: rotate(-45deg);
-}
+}--*/
 
 /*----Colors, etc.--*/
 .navbar-chi{
