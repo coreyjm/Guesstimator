@@ -147,12 +147,57 @@ $.getJSON(crAPI, function (crdata) {
 				"question" : "Gay marriage came to "+city+" in June. How many same-sex couples live here?",
 				"answer" : samesexCouples
 		}
-	};	
+	};
+
 
 	//and now all the variables are populated and match those at the top of the questions-answers file. Boom.
 });
 
 
 
+var score = 0;
+
+$(document).ready(function(){
+
+	var html = ["<div class='row'><div class='col-xs-12 quest'>Questions</div></div><div class='row'></div><div class='row'><div class='final col-xs-12'></div></div>"];
+	
+	for (var i = 1; i <= 10; i++) {
+    html.push("<div class='row question-row' data-question='question-" + i + "'><div class='col-xs-12 quest'>#" + i + ": " +  questionsAnswers['question-' + i]['question'] + "</div><div class='col-xs-6 lowest'><label>Low estimate</label><input class='form-control' type='text' name='low'></div><div class='col-xs-6 highest'><label>High estimate</label><input class='form-control' type='text' name='high'></div><div class='final col-xs-12'></div></div>");
+	}
+
+	$('.questions').html(html.join(''));
+
+	$('#guess').click(function(){
+		var incomplete = false;
+		score = 0;
+
+		$.each($('.question-row'), function(k,v){
+			var q = $(this).attr('data-question'),
+					a = questionsAnswers[q]["answer"],
+					l = parseInt($(this).find('input[name="low"]').val()),
+					h = parseInt($(this).find('input[name="high"]').val()),
+					$signal = $(this).find('.final');
+
+			if (isNaN(l) || isNaN(h)){
+				$signal.html("<span class='error'>* Required</span>");
+				incomplete = true;
+			} else {
+				if (l <= a && a <= h){
+					$signal.html("<span class='correct'>CORRECT</span>");
+					score++;
+				} else {
+					$signal.html("<span class='incorrect'>NOPE</span>");
+				}
+			}
+
+		});
+
+		if (!incomplete){
+			$('#score').html(score);
+		}
+
+	});
+
+})
 
 
