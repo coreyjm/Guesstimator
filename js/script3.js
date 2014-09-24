@@ -180,7 +180,7 @@ $.getJSON(crAPI, function (crdata) {
 		});
 
 		if (!incomplete){
-			$('#score').html(score*10);
+			$('#score').html('<h3>I just scored '+score*10+'on the Guesstimator!</h3>');
 		}
 
 	});
