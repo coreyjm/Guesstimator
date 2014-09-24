@@ -103,7 +103,8 @@ $.getJSON(crAPI, function (crdata) {
 	var povertyPct = (povertyT/totalPopulation)*100
 	var samesexCouples = samesexM + samesexW 
 	//console.log(povertyPct, samesexCouples);
-
+	console.log(totalPopulation);
+	console.log(samesexM)
 
 	//and now all the variables are populated and match those at the top of the questions-answers file. Boom.
 });
