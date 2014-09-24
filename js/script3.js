@@ -169,9 +169,11 @@ $.getJSON(crAPI, function (crdata) {
 			} else {
 				if (l <= a && a <= h){
 					$signal.html("<span class='correct'>CORRECT! The exact answer is "+a+"</span>");
+					console.log(a);
 					score++;
 				} else {
 					$signal.html("<span class='incorrect'>NOPE! The exact answer is "+a+"</span>");
+					console.log(a);
 				}
 			}
 
