@@ -104,50 +104,60 @@ $.getJSON(crAPI, function (crdata) {
 	var questionsAnswers = {
 		"question-1": {
 				"question" : "What is the total population of "+city+"?",
-				"answer" : totalPopulation
+				"answer" : totalPopulation,
+				"image" : "/icons/population.png"
 		},	
 		"question-2": {
 				"question" : "What is the median age of people in "+city+"?",
-				"answer" : medianAge
+				"answer" : medianAge,
+				"image" : "/icons/bdaycake.png"
 		},	
 		"question-3": {
 				"question" : "How many children (under 18) live in "+city+"?",
-				"answer" : under18
+				"answer" : under18,
+				"image" : "/icons/baby.png"
 		},	
 		"question-4": {
 				"question" : "What is the median income in "+city+"?",
-				"answer" : medianIncome
+				"answer" : medianIncome,
+				"image" : "/icons/money.png"
 		},	
 		"question-5": {
 				"question" : "What percentage of people in "+city+" live in poverty?",
-				"answer" : povertyPct
+				"answer" : povertyPct,
+				"image" : "/icons/poverty.png"
 		},	
 		"question-6": {
 				"question" : "How many families of married couples live in "+city+"?",
-				"answer" : marriedCoupFam
+				"answer" : marriedCoupFam,
+				"image" : "/icons/wedding.png"
 		},	
 		"question-7": {
 				"question" : "How many women live in "+city+"?",
-				"answer" : totalWomen
+				"answer" : totalWomen,
+				"image" : "/icons/woman.png"
 		},	
 		"question-8": {
 				"question" : city+" has awesome tacos. How many people identify as being of Mexican origin here?",
-				"answer" : mexicanOrigin
+				"answer" : mexicanOrigin,
+				"image" : "/icons/taco.png"
 		},	
 		"question-9": {
 				"question" : "How many senior citizens (older than 65) live in "+city+"?",
-				"answer" : seniors
+				"answer" : seniors,
+				"image" : "/icons/senior.png"
 		},	
 		"question-10": {
 				"question" : "Gay marriage came to "+city+" in June. How many same-sex couples live here?",
-				"answer" : samesexCouples
+				"answer" : samesexCouples,
+				"image" : "/icons/gay.png"
 		}
 	};
 
 	var html = ["<div class='row'><div class='col-xs-12 quest'>Questions</div></div><div class='row'></div><div class='row'><div class='final col-xs-12'></div></div>"];
 	
 	for (var i = 1; i <= 10; i++) {
-    html.push("<div class='row question-row' data-question='question-" + i + "'><div class='col-xs-12 quest'>#" + i + ": " +  questionsAnswers['question-' + i]['question'] + "</div><div class='col-xs-6 lowest'><label>Low estimate</label><input class='form-control' type='text' name='low'></div><div class='col-xs-6 highest'><label>High estimate</label><input class='form-control' type='text' name='high'></div><div class='final col-xs-12'></div></div>");
+    html.push("<div class='row question-row' data-question='question-" + i + "'><div class='col-xs-12 questimg'><img src='"+questionsAnswers['question-' + i]['image']+"'></div><div class='col-xs-12 quest'>" + i + ": " +  questionsAnswers['question-' + i]['question'] + "</div><div class='col-xs-6 lowest'><label>Low estimate</label><input class='form-control' type='text' name='low'></div><div class='col-xs-6 highest'><label>High estimate</label><input class='form-control' type='text' name='high'></div><div class='final col-xs-12'></div></div>");
 	}
 
 	$('.questions').html(html.join(''));
