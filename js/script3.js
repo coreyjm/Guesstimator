@@ -105,52 +105,52 @@ $.getJSON(crAPI, function (crdata) {
 		"question-1": {
 				"question" : "What is the total population of "+city+"?",
 				"answer" : totalPopulation,
-				"image" : "/icons/population.png"
+				"image" : "Guesstimator/icons/population.png"
 		},	
 		"question-2": {
 				"question" : "What is the median age of people in "+city+"?",
 				"answer" : medianAge,
-				"image" : "/icons/bdaycake.png"
+				"image" : "Guesstimator/icons/bdaycake.png"
 		},	
 		"question-3": {
 				"question" : "How many children (under 18) live in "+city+"?",
 				"answer" : under18,
-				"image" : "/icons/baby.png"
+				"image" : "Guesstimator/icons/baby.png"
 		},	
 		"question-4": {
 				"question" : "What is the median income in "+city+"?",
 				"answer" : medianIncome,
-				"image" : "/icons/money.png"
+				"image" : "Guesstimator/icons/money.png"
 		},	
 		"question-5": {
 				"question" : "What percentage of people in "+city+" live in poverty?",
 				"answer" : povertyPct,
-				"image" : "/icons/poverty.png"
+				"image" : "Guesstimator/icons/poverty.png"
 		},	
 		"question-6": {
 				"question" : "How many families of married couples live in "+city+"?",
 				"answer" : marriedCoupFam,
-				"image" : "/icons/wedding.png"
+				"image" : "Guesstimator/icons/wedding.png"
 		},	
 		"question-7": {
 				"question" : "How many women live in "+city+"?",
 				"answer" : totalWomen,
-				"image" : "/icons/woman.png"
+				"image" : "Guesstimator/icons/woman.png"
 		},	
 		"question-8": {
 				"question" : city+" has awesome tacos. How many people identify as being of Mexican origin here?",
 				"answer" : mexicanOrigin,
-				"image" : "/icons/taco.png"
+				"image" : "Guesstimator/icons/taco.png"
 		},	
 		"question-9": {
 				"question" : "How many senior citizens (older than 65) live in "+city+"?",
 				"answer" : seniors,
-				"image" : "/icons/senior.png"
+				"image" : "Guesstimator/icons/senior.png"
 		},	
 		"question-10": {
 				"question" : "Gay marriage came to "+city+" in June. How many same-sex couples live here?",
 				"answer" : samesexCouples,
-				"image" : "/icons/gay.png"
+				"image" : "Guesstimator/icons/gay.png"
 		}
 	};
 
