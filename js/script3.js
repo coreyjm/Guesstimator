@@ -180,7 +180,7 @@ $.getJSON(crAPI, function (crdata) {
 		});
 
 		if (!incomplete){
-			$('#score').html('<h3>I just scored '+score*10+' on the #ona14newsgames Guesstimator!</h3> Try to beat me at http://bit.ly/ONAguess!');
+			$('#score').html('<h3>I just scored '+score*10+' on the #ona14newsgames Guesstimator! Try to beat me at http://bit.ly/ONAguess</h3>');
 		}
 
 	});
