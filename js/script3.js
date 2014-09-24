@@ -168,10 +168,10 @@ $.getJSON(crAPI, function (crdata) {
 				incomplete = true;
 			} else {
 				if (l <= a && a <= h){
-					$signal.html("<span class='correct'>CORRECT</span>");
+					$signal.html("<span class='correct'>CORRECT! The exact answer is "+a+"</span>");
 					score++;
 				} else {
-					$signal.html("<span class='incorrect'>NOPE</span>");
+					$signal.html("<span class='incorrect'>NOPE! The exact answer is "+a+"</span>");
 				}
 			}
 
