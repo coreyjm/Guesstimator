@@ -98,8 +98,6 @@ $.getJSON(crAPI, function (crdata) {
 	//make poverty a percentage and add to get samesex couples
 	var povertyPct = (povertyT/totalPopulation)*100
 	var samesexCouples = samesexM + samesexW 
-	console.log(totalPopulation);
-	console.log(samesexM)
 
 	var questionsAnswers = {
 		"question-1": {
@@ -179,18 +177,17 @@ $.getJSON(crAPI, function (crdata) {
 			} else {
 				if (l <= a && a <= h){
 					$signal.html("<span class='correct'>CORRECT! The exact answer is "+a+"</span>");
-					console.log(a);
 					score++;
 				} else {
 					$signal.html("<span class='incorrect'>NOPE! The exact answer is "+a+"</span>");
-					console.log(a);
 				}
 			}
 
 		});
 
 		if (!incomplete){
-			$('#score').html('<h3>I just scored '+score*10+' on the #ona14newsgames Guesstimator! Try to beat me at http://bit.ly/ONAguess</h3>');
+			$('#guess').fadeOut();
+			$('#score').html('<h3>I just scored '+ (score*10) +'% on the #ona14newsgames Guesstimator! Try to beat me at http://bit.ly/ONAguess</h3><a href="#" id="tweet" class="btn btn-info">Tweet Your Score!</a>');
 		}
 
 	});
