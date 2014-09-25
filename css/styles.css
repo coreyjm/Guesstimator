@@ -98,14 +98,15 @@ label { font-weight: normal; }
 }
 
 /*----TYPE STUFFS----*/
-.navbar-brand, h1, h3, .quest{
+.navbar-brand, h1, h3, h4, .quest{
 	font-family: 'Francois One', sans-serif;
 }
 h4{
-	font-weight:normal;
 	color:#777777;
 }
 .error { color: red; }
+.correct{color: green;}
+.incorrect{color: red;}
 
 /*-----WEIRDNESSES-----*/
 
