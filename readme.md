@@ -6,7 +6,11 @@ It was built rather quickly, using basic frontend stuff, and the CensusReporter 
 
 Setup
 ========
-
+1. Head on over to [censusreporter.org](http://censusreporter.org/) and search for your city/state, etc.
+2. After the query runs, you will see a number in the URL between the second slash and the first dash. Copy it.
+3. Open the script3.js file and change the cityCode variable to the number you copied.
+4. Change the city variable to the name of your city/state, etc.
+5. Done.
 
 
 
