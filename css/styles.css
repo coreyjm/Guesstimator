@@ -56,18 +56,6 @@ body {
 	margin: 0 auto 100px;
 }
 
-span.correct {
-  color: #008000;
-  padding-top: 10px;
-  display: block;
-}
-
-span.incorrect {
-  color: #DB1414;
-  padding-top: 10px;
-  display: block;
-}
-
 input[type="text"] {
 	width: 100%;
 }
@@ -108,8 +96,24 @@ h4{
 	color:#777777;
 }
 .error { color: red; }
-.correct{color: green;}
-.incorrect{color: red;}
+
+span.correct {
+  color: #008000;
+  padding-top: 10px;
+  display: block;
+}
+
+span.incorrect {
+  color: #DB1414;
+  padding-top: 10px;
+  display: block;
+}
+
+
+a#tweet {
+  padding: 10px 30px;
+  font-size: 24px;
+}
 
 /*-----WEIRDNESSES-----*/
 
