@@ -101,6 +101,9 @@ label { font-weight: normal; }
 .navbar-brand, h1, h3, h4, .quest{
 	font-family: 'Francois One', sans-serif;
 }
+h1{
+  color: #B3DDF2;
+}
 h4{
 	color:#777777;
 }
