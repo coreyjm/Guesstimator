@@ -187,7 +187,7 @@ $.getJSON(crAPI, function (crdata) {
 		if (!incomplete){
 			$('#guess').fadeOut();
 			var click = "window.open('https://twitter.com/intent/tweet?text=My%20%23score%20is%20' + (score*10) + '%25%20on%20the%20%23ona14newsgames%20Guesstimator!%20Try%20to%20beat%20me!&url=http%3A%2F%2Fbit.ly%2FONAguess', 'newwindow', 'width=430, height=260'); return false;";
-			$('#score').html('<h3>You scored '+ (score*10) +'%! Now tweet your score! If you do so during the session, you could get a prize!</h3><a onclick="' + click + '" href="" id="tweet" class="btn btn-info">Tweet Your Score!</a>');
+			$('#score').html('<h3>You scored '+ (score*10) +'%! Now tweet your score, and you could get a prize!</h3><a onclick="' + click + '" href="" id="tweet" class="btn btn-info">Tweet Your Score!</a>');
 		}
 
 	});
