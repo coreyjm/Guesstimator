@@ -125,7 +125,7 @@ $.getJSON(crAPI, function (crdata) {
 				"image" : "icons/poverty.png"
 		},	
 		"question-6": {
-				"question" : "How many families of married couples with or without children live in "+city+"?",
+				"question" : "How many married couples live in "+city+"?",
 				"answer" : marriedCoupFam,
 				"image" : "icons/wedding.png"
 		},	
