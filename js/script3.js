@@ -32,8 +32,8 @@ var queries = {
 			row: "B17001002"
 		},
 		marriedCoupleFams: {	
-			table: "B11001",
-			row: "B11001003"
+			table: "B11003",
+			row: "B11003002"
 		},
 		totalFem: {
 			table: "B01001",
@@ -85,12 +85,13 @@ $.getJSON(crAPI, function (crdata) {
 	var under18 = crdata.data[cityCode].B09001.estimate.B09001001;
 	var medianIncome = crdata.data[cityCode].B19013.estimate.B19013001;
 	var povertyT = crdata.data[cityCode].B17001.estimate.B17001002;
-	var marriedCoupFam = crdata.data[cityCode].B01001.estimate.B01001026;
+	var marriedCoupFam = crdata.data[cityCode].B11003.estimate.B11003002;
 	var totalWomen = crdata.data[cityCode].B01001.estimate.B01001026;
 	var mexicanOrigin = crdata.data[cityCode].C03001.estimate.C03001004;
 	var seniors = crdata.data[cityCode].B09020.estimate.B09020001;
 	var samesexM = crdata.data[cityCode].B11009.estimate.B11009003;
 	var samesexW = crdata.data[cityCode].B11009.estimate.B11009005;
+	console.log(marriedCoupFam);
 	//and now all the variables are populated. Boom.
 
 	//make poverty a percentage and add to get samesex couples
@@ -124,7 +125,7 @@ $.getJSON(crAPI, function (crdata) {
 				"image" : "icons/poverty.png"
 		},	
 		"question-6": {
-				"question" : "How many families of married couples live in "+city+"?",
+				"question" : "How many families of married couples with or without children live in "+city+"?",
 				"answer" : marriedCoupFam,
 				"image" : "icons/wedding.png"
 		},	
