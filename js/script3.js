@@ -1,5 +1,5 @@
-var city= "Chicago"; //Change this for your city!
-var cityCode = "16000US1714000"; //Change this for your city!
+var city= "Bowling Green"; //Change this for your city!
+var cityCode = "16000US3907972"; //Change this for your city!
 var score = 0;
 
 /*
